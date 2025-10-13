@@ -9,8 +9,11 @@ import logging
 from typing import Optional, List
 
 from fastapi import APIRouter, HTTPException, status
-
 from pydantic import BaseModel, ConfigDict, Field
+
+from app.utils.logger import get_logger
+
+logger = get_logger(__name__)
 
 router = APIRouter()
 
