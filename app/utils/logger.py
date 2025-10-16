@@ -9,7 +9,7 @@ def setup_logging() -> None:
     if type_env == "development":
         level = logging.DEBUG
     else:
-        level : logging.INFO
+        level = logging.INFO
     
     root_logger = logging.getLogger()
     root_logger.setLevel(level)
